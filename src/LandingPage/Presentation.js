@@ -16,7 +16,7 @@ const textBold = (text) => {
 
 const DescriptionPresentation = () => {
     const title = "Quand être parent devient un jeu d'enfant";
-    return <Grid item container xl={5} lg={5} direction="column" justify="flex-start" alignItems="center" spacing={2}>
+    return <Grid item container xl={5} lg={5} md={5} direction="column" justify="center" alignItems="center" spacing={5} style={{margin: 5}}>
         <Grid item>
             <Typography color={"primary"} variant="h2">{textBold(title)}</Typography>
         </Grid>
