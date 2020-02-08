@@ -16,7 +16,7 @@ const textBold = (text) => {
 
 const DescriptionPresentation = () => {
     const title = "Quand être parent devient un jeu d'enfant";
-    return <Grid item container xl={5} lg={5} md={5} direction="column" justify="center" alignItems="center" spacing={5} style={{margin: 5}}>
+    return <Grid item container xl={5} lg={5} md={12} direction="column" justify="center" alignItems="center" spacing={3} style={{margin: 5}}>
         <Grid item>
             <Typography color={"primary"} variant="h2">{textBold(title)}</Typography>
         </Grid>
@@ -42,7 +42,7 @@ const Presentation = () => {
         <Paper>
             <Grid container direction="row" justify={"space-around"} alignItems="center" style={{paddingTop: 30}}>
                 <DescriptionPresentation/>
-                <Grid item lg={3} xl={3} style={{backgroundColor: debug}}>
+                <Grid item lg={4} xl={3} md={5} style={{backgroundColor: debug}}>
                     <img
                         height={"auto"}
                         width={"500"}
