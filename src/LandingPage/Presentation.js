@@ -37,16 +37,17 @@ const DescriptionPresentation = () => {
 
 const Presentation = () => {
     const debug = false ? "red" : ""
+    const padding = 50;
 
     return <Grid item xs={11} sm={11} md={11} lg={11} xl={11}>
-        <Paper>
+        <Paper style={{paddingTop:padding, paddingBottom:padding, borderRadius: 50}}>
             <Grid container direction="row" justify={"space-around"} alignItems="center" style={{paddingTop: 30}}>
                 <DescriptionPresentation/>
                 <Grid item lg={4} xl={3} md={5} style={{backgroundColor: debug}}>
                     <img
                         height={"auto"}
-                        width={"500"}
-                        src={"https://static.boutique.orange.fr/media-cms/mediatheque/636x900-fairphone-3---vue-1-156109.png"}
+                        width={"300"}
+                        src={"phone-app.png"}
                         alt={"phone-app"}/>
                 </Grid>
             </Grid>
